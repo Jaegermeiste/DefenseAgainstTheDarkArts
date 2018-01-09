@@ -1,4 +1,3 @@
-# Defense Against the Dark Arts
 ## CS 373 400, Winter 2018
 ### Jason George
 
