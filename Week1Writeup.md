@@ -14,4 +14,6 @@ I was aware of VirusTotal [https://www.virustotal.com/](https://www.virustotal.c
 
 I was actually aware that .EXE files were PE files, as part of a rabbit hole expedition on Wikipedia about the history of Windows 3.1 and Win32s. A more reliable (and surprisingly human readable) document on PE files is located here: [https://msdn.microsoft.com/en-us/library/ms809762.aspx](https://msdn.microsoft.com/en-us/library/ms809762.aspx).
 
-What is unclear at this point is whether or not I should be trying to log into the VM and do a lab, or if I should drive on with the videos.
+Regarding the VM, in terms of tools, I was familiar with Process Monitor. I've used it to troubleshoot issues with complex vendor software at work. The remainder I was/am unfamiliar with.
+
+What is unclear at this point is whether or not I should be trying to log into the VM right now and do a lab, or if I should drive on with the videos.
