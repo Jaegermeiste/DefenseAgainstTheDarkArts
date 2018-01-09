@@ -10,7 +10,7 @@ Later slides provide significantly more new information - for example, I had no 
 
 Naming conventions are pretty easy to understand, actually. Even the nonstandard ones are clear enough if you are familiar with common abbreviations.
 
-I was aware of VirusTotal [https://www.virustotal.com/](https://www.virustotal.com/), but not malwr [https://malwr.com/](https://malwr.com/) (offline as of this writing) or Comodo's threat analysis tool [https://www.comodo.com/home/internet-security/submit.php](https://www.comodo.com/home/internet-security/submit.php) (I thought they just did SSL certificates).
+I was aware of VirusTotal [https://www.virustotal.com/](https://www.virustotal.com/), but not malwr [https://malwr.com/](https://malwr.com/) (in maintenance mode as of this writing) or Comodo's threat analysis tool [https://www.comodo.com/home/internet-security/submit.php](https://www.comodo.com/home/internet-security/submit.php) (I thought they just did SSL certificates).
 
 I was actually aware that .EXE files were PE files, as part of a rabbit hole expedition on Wikipedia about the history of Windows 3.1 and Win32s. A more reliable (and surprisingly human readable) document on PE files is located here: [https://msdn.microsoft.com/en-us/library/ms809762.aspx](https://msdn.microsoft.com/en-us/library/ms809762.aspx).
 
