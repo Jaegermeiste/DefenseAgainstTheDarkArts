@@ -19,3 +19,11 @@ I was actually aware that .EXE files were PE files, information discovered as pa
 Regarding the VM, in terms of tools, I was familiar with Process Monitor. I've used it to troubleshoot issues with complex vendor software at work. The remainder I was/am unfamiliar with.
 
 What is unclear at this point is whether or not I am supposed to be logging into the VM right now to do the lab, or if I should drive on with the videos.
+
+### Basics of Malware 2 - Wk 1 Lesson 2
+
+The details of Advanced Persistent Threats were interesting - and APT is definitely the sort of acronym that the military uses regularly. 
+
+I am familiar with OSINT from activities in a past life, so none of that was particularly new to me per se, but the specifics of intrusion into computerized systems are largely analagous to those of espionage in general and I found the application of those techniques novel (to me).
+
+The lab walkthroughs were enlightening. Seeing how much information can be gleaned about an execuatble from a few basic tools definitely makes me feel like a tool similar to Dotfuscator [https://marketplace.visualstudio.com/items?itemName=PreEmptiveSolutions.NETObfuscator-Dotfuscator](https://marketplace.visualstudio.com/items?itemName=PreEmptiveSolutions.NETObfuscator-Dotfuscator) should be used for any customer facing production code. I'm looking forward to the lab at this point, but there isn't too much more to note about the lecture (as much of it was hands-on walkthrough).
