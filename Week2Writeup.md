@@ -17,3 +17,10 @@ This is interesting and meshes well with much of the training I received in my M
 
 SIEM - Security, Information, and Events Management system (like [http://www.logalyze.com](http://www.logalyze.com))
 
+Locard's Exchange Principle - when two objects come into contact, there will be evidence of the contact.
+
+Like Heisenberg's Uncertainty Principle - you cannot observer and measure the state of the system without changing it.
+
+Order of Volatility
+RFC 3227 [https://tools.ietf.org/html/rfc3227](https://tools.ietf.org/html/rfc3227)
+Proceed from most volatile to last volatile
