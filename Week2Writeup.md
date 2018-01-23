@@ -1,4 +1,10 @@
-Week 2 Lesson 3 - Advanced Forensics 1
+[Back to Index](https://jaegermeiste.github.io/DefenseAgainstTheDarkArts/)
+
+## Week 1 Writeup
+
+Jason George
+
+### Advanced Forensics 1 - Wk 2 Lesson 3
 
 Recommended Book:
 Cliff Stohl - The Cuckoo's Egg: [https://www.amazon.com/Cuckoos-Egg-Tracking-Computer-Espionage/dp/1416507787](https://www.amazon.com/Cuckoos-Egg-Tracking-Computer-Espionage/dp/1416507787)
@@ -39,7 +45,7 @@ Useful plugins:
 -deskscan
 -getsids
 
-Week 2 Lesson 4 - Advanced Forensics 2
+### Advanced Forensics 2 - Wk 2 Lesson 4
 
 I didn't realize that the Windows registry was as volatile as it apparently is.
 Reg-Ripper [https://github.com/keydet89/RegRipper2.8](https://github.com/keydet89/RegRipper2.8) essentially dumps the registry with timestamps and access data (per [https://windowsir.blogspot.com/2011/03/using-regripper.html](https://windowsir.blogspot.com/2011/03/using-regripper.html))
