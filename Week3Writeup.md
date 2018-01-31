@@ -38,7 +38,7 @@ The first step for this analysis was examining the strings with FileInsight.
 - For hash A187...B303, the file is apparently an executable, but it is unclear what it does (though it was compiled in Borland Delphi like LADS above).
 
 Then, building Yara scripts for the two bad programs:
-- For hash 068D...10B7, it was as simple as searching for the 'eXplOrER.Exe' string. No false positives were found in C:\Windows\System32.
+- For hash 068D...10B7, it was as simple as searching for the 'eXplOrER.Exe' string. No false positives were found in C:\Windows\System32, as below. The Editor was used to back up the questionable results from the command line tool.
 
   <img src="hash068D.PNG" alt="">
 
