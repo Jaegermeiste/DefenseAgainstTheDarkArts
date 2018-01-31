@@ -29,13 +29,19 @@ Running Yara itself, it just complained about being unable to open files in the 
 This is apparently normal, per the video, but frustrating.
 
 Based on the samples in MalwareDefense:
+
 Your name
+
 Date/Time of your “posting” (completion)
+
 Malware hash
+
 Yara signature
+
 Your analysis
 
-The first step for this analysis was examining the string witht FileInsight.
+
+The first step for this analysis was examining the strings with FileInsight.
 For hash 068D, a major flag that this is malware are misspelled strings like 'eXplOrER.exe'.
 For hash 0067, it apparently opens a bunch of Internet Explorer windows for several (presumably) malicious sites. It also contains the string 'attrib +r +s +h c:\qusla.exe >nul', which is setting an executable to read only and hidden, whihc is highly suspicious.
 For hash 4884, it is apparently LADS [https://www.securityfocus.com/tools/1251](https://www.securityfocus.com/tools/1251) and [http://www.heysoft.de/](http://www.heysoft.de/), which is an obsolete sysadmin tool.
