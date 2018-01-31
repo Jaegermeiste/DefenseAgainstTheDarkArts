@@ -50,3 +50,5 @@ The malware for hash 068D seems that it simulates an ASP.NET web page running on
 
 Hash 0067 is the more interesting of the two, because of some of the other activities contined within.
 The first thing that it does is copy itself to the c:\ drive. It then hides itself with attrib, and it adds a registry key to HKLM/Software/Microsoft/Windows/CurrentVersion/Run to ensure that it starts on launch. It apparently modifes the Internet Explorer Start Page with another registry key, and a modified Quick Launch link for IE to the taskbar.
+
+It seems unlikely that hash A187 is a legitimate program, but there is nothing that jumps out as obviously malicious, either.
