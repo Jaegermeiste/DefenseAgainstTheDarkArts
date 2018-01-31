@@ -41,7 +41,12 @@ Then, building Yara scripts for the two bad programs:
 - For hash 068D...10B7, it was as simple as searching for the 'eXplOrER.Exe' string. No false positives were found in C:\Windows\System32, as below. The Editor was used to back up the questionable results from the command line tool.
 
   <img src="hash068D.PNG" alt="">
+  
+The malware for hash 068D seems that it simulates an ASP.NET web page running on the localhost, and may spoof an operating system component such as an Input Method Editor.
 
 - For hash 0067...D9D9, there were no hits for 'attrib +r +s +h c:\\qusla.exe >nul' or even just 'qusla.exe'. This required a search for the hex version of 'qusla.exe' as seen below. No false positives found in C:\Windows\System32 either.
 
   <img src="hash0067.PNG" alt="">
+
+Hash 0067 is the more interesting of the two, because of some of the other activities contined within.
+The first thing that it does is copy itself to the c:\ drive. It then hides itself with attrib, and it adds a registry key to HKLM/Software/Microsoft/Windows/CurrentVersion/Run to ensure that it starts on launch. It apparently modifes the Internet Explorer Start Page with another registry key, and a modified Quick Launch link for IE to the taskbar.
