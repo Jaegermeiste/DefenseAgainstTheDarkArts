@@ -26,6 +26,8 @@ Running Yara itself, it just complained about being unable to open files in the 
 
 <img src="YaraPain.PNG" alt="">
 
+This is apparently normal, per the video, but frustrating.
+
 Based on the samples in MalwareDefense:
 Your name
 Date/Time of your “posting” (completion)
