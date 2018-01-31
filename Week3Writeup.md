@@ -28,22 +28,20 @@ Running Yara itself, it just complained about being unable to open files in the 
 
 This is apparently normal, per the video, but frustrating.
 
-Based on the samples in MalwareDefense:
-
-Your name
-
-Date/Time of your “posting” (completion)
-
-Malware hash
-
-Yara signature
-
-Your analysis
-
+Below is the "Blog Post" based on the samples in MalwareDefense/Class2:
 
 The first step for this analysis was examining the strings with FileInsight.
 
-- For hash 068D, a major flag that this is malware are misspelled strings like 'eXplOrER.exe'.
-- For hash 0067, it apparently opens a bunch of Internet Explorer windows for several (presumably) malicious sites. It also contains the string 'attrib +r +s +h c:\qusla.exe >nul', which is setting an executable to read only and hidden, whihc is highly suspicious.
-- For hash 4884, it is apparently LADS [https://www.securityfocus.com/tools/1251](https://www.securityfocus.com/tools/1251) and [http://www.heysoft.de/](http://www.heysoft.de/), which is an obsolete sysadmin tool.
-- For hash A187, the file is apparently an executable, but it is unclear what it does (though it was compiled in Borland Delphi like LADS above).
+- For hash 068D...10B7, a major flag that this is malware are misspelled strings like 'eXplOrER.Exe'.
+- For hash 0067...D9D9, it apparently opens a bunch of Internet Explorer windows for several (presumably) malicious sites. It also contains the string 'attrib +r +s +h c:\qusla.exe >nul', which is setting an executable to read only and hidden, whihc is highly suspicious.
+- For hash 4884...6209, it is apparently LADS [https://www.securityfocus.com/tools/1251](https://www.securityfocus.com/tools/1251) and [http://www.heysoft.de/](http://www.heysoft.de/), which is an obsolete sysadmin tool.
+- For hash A187...B303, the file is apparently an executable, but it is unclear what it does (though it was compiled in Borland Delphi like LADS above).
+
+Then, building Yara scripts for the two bad programs:
+- For hash 068D...10B7, it was as simple as searching for the 'eXplOrER.Exe' string. No false positives were found in C:\Windows\System32.
+
+  <img src="hash068D.PNG" alt="">
+
+- For hash 0067...D9D9, there were no hits for 'attrib +r +s +h c:\\qusla.exe >nul' or even just 'qusla.exe'. This required a search for the hex version of 'qusla.exe' as seen below. No false positives found in C:\Windows\System32 either.
+
+  <img src="hash0067.PNG" alt="">
