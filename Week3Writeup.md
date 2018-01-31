@@ -20,7 +20,7 @@ Cuckoo Sandbox [https://www.cuckoosandbox.org/](https://www.cuckoosandbox.org/) 
 
 Using Yara in practice for this lab has been a nightmare. It complained of syntax errors and unterminated strings that were not there (the rules aren't complex). The Yara editor (or at least the old version on the VM) was not very useful as an IDE. Not expecting Visual Studio, but still... The Rules Generator hung every time, complaining that the window did not have a \[\*\] in the title:
 
-<div style="text-align:center"><img src ="YaraEditorSucks.png"/></div>
+<div style="text-align:center"><img src ="https://jaegermeiste.github.io/DefenseAgainstTheDarkArts/YaraEditorSucks.png"/></div>
 
 Running Yara itself, it just complained about being unable to open files in the system32 directory and gave no useful results.
 
