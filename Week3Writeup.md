@@ -22,9 +22,13 @@ Using Yara in practice for this lab has been a nightmare. It complained of synta
 
 ![YaraEditor](../blob/master/YaraEditorSucks.PNG?raw=true)
 
+<img src="YaraEditorSucks.PNG" alt="">
+
 Running Yara itself, it just complained about being unable to open files in the system32 directory and gave no useful results.
 
 ![Yara](../blob/master/YaraPain.PNG?raw=true)
+
+<img src="YaraPain.PNG" alt="">
 
 Based on the samples in MalwareDefense:
 Your name
