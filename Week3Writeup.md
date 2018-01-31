@@ -1,6 +1,6 @@
 [Back to Index](https://jaegermeiste.github.io/DefenseAgainstTheDarkArts/)
 
-## Week 2 Writeup
+## Week 3 Writeup
 
 Jason George
 
