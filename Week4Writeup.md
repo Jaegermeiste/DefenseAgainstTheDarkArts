@@ -17,6 +17,25 @@ buffer[0] = 0;    // Prevent compiiler optimizing away memset by (meaninglessly)
 
 or in Win32, using SecureZeroMemory ([https://msdn.microsoft.com/en-us/library/windows/desktop/aa366877(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366877(v=vs.85).aspx)) instead of ZeroMemory.
 
+FSExploitMe Lab 1:
+1. lmf m FSExploitMe >> start = 54430000 end = 5443b000
+2. !teb >> StackBase = 021f0000 StackLimit=021d7000 ?021f0000 - 021d7000 = 00019000
+3. !peb >> ProcessHeap = 00320000
+4. r >> eip=54431df0
+5. u eip L10 >> 54431df3 sub esp, 14h (0x14 = 20 bytes)
+6. t 5; du poi(esp) >> FluffyBunniesDontFlapOrQuack
+7. p b 11 >> eip = 54431e27 cmp dword ptr [ebp-4],0Ah (0x0A = 10 decimal). 10 loops
+8. pt >> eax = 00007a69; .formats eax >> Decimal: 31337
+9. !address esi >> Usage: Stack
+
+Most of the difficulty here is simply in learning WinDbg, but it is obviously very powerful. Now on to exploits!
+
+FSExploitMe Lab 2:
+A. Stack Behavior:
+1. r >> edi = 54431e80
+2. 3 arguments: 54431e89 push 1, 54331e8b push offset FSExploitMe!IID_DFSExploitMeEvents+0x6c (54434ecc), 54431e90 push 26h
+3. .formats 26h >> 38 decimal, da 54434ecc >> "HeyHeyHeySon", 0x1 = 1 decimal: function call could be: func(int 38, char* "HeyHeyHeySon", bool true);
+
 ### Software Vulnerabilities and Common Exploits Lesson 2 - Wk 4
 
 Random note: `\u4141` used in the exploit examples is 䅁, the unified Chinese/Japanese/Korean "Ideograph to husk rice; to get the grains by oppressing the ears of the rice plant" ([https://unicode-table.com/en/4141/](https://unicode-table.com/en/4141/)). Sort of apropos.
