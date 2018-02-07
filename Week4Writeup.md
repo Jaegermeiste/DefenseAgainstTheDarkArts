@@ -19,4 +19,4 @@ or in Win32, using SecureZeroMemory ([https://msdn.microsoft.com/en-us/library/w
 
 ### Software Vulnerabilities and Common Exploits Lesson 2 - Wk 4
 
-Dummy
+Random note: `\u4141` is \u4141, the unfieid Chinese/Japanese/Korean "Ideograph to husk rice; to get the grains by oppressing the ears of the rice plant" 9[https://unicode-table.com/en/4141/](https://unicode-table.com/en/4141/)).
