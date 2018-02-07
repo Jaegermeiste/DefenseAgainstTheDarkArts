@@ -31,10 +31,20 @@ FSExploitMe Lab 1:
 Most of the difficulty here is simply in learning WinDbg, but it is obviously very powerful. Now on to exploits!
 
 FSExploitMe Lab 2:
+
 A. Stack Behavior:
 1. r >> edi = 54431e80
 2. 3 arguments: 54431e89 push 1, 54331e8b push offset FSExploitMe!IID_DFSExploitMeEvents+0x6c (54434ecc), 54431e90 push 26h
 3. .formats 26h >> 38 decimal, da 54434ecc >> "HeyHeyHeySon", 0x1 = 1 decimal: function call could be: func(int 38, char* "HeyHeyHeySon", bool true);
+
+B. Crash Triage
+1. r >> eip = 41414141, ebp = 41414141 
+2. eax = 020f95ec, ebx = 00000008, ecx = 00000000, edx = 00000000, esi = 020f9a00, edi = 54432160, eip = 41414141, esp = 020f99f8, ebp = 41414141. Not ebx, ecx, edx, eip, or ebp. dd edi points to normal looking data. dd eax >> 414141... , dd esi >> 414141..., dd esp >> 414141... so eax, esi, and esp point to attacker controlled data.
+3. 544320e0
+4. 0x400 = 1024 decimal
+
+C. Lab: Exploit!
+
 
 ### Software Vulnerabilities and Common Exploits Lesson 2 - Wk 4
 
