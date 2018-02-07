@@ -79,10 +79,13 @@ function L2Exercise1() {
 ```
 
 Profit!
-
+<img src="ExploitRunCalc.PNG" alt="">
 
 ### Software Vulnerabilities and Common Exploits Lesson 2 - Wk 4
 
 Random note: While 0x41 is ASCII A, `\u4141` used in the exploit examples is 䅁, the unified Chinese/Japanese/Korean "Ideograph to husk rice; to get the grains by oppressing the ears of the rice plant" ([https://unicode-table.com/en/4141/](https://unicode-table.com/en/4141/)). Sort of apropos.
 
 Enabling the Low Fragmentation Heap is important in order to ensure there is contiguous memory to exploit. The heap is prdicatably organized, so you can load exploit code in high memory, replace a freed object in the LFH with a pointer to your exploit code, and then the code itself will execute the exploit naturally the next time the compromised object is called.
+
+
+This week's lessons was highly informative, if a bit complex with a lot to absorb. I believe my own regular debugging skills have improved as well.
