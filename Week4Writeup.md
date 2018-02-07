@@ -12,7 +12,7 @@ Brad Antoniewicz ([@brad_anton](https://twitter.com/brad_anton)) is currently a 
 
 ``` C
 memset(buffer, 0, sizeof(buffer)); 
-buffer[0] = 0;    // Prevent compiiler optimizing away memset
+buffer[0] = 0;    // Prevent compiiler optimizing away memset by (meaninglessly) accessing it afterward
 ```
 
 or in Win32, using SecureZeroMemory ([https://msdn.microsoft.com/en-us/library/windows/desktop/aa366877(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366877(v=vs.85).aspx)) instead of ZeroMemory.
