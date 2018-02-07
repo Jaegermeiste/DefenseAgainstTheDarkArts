@@ -21,4 +21,4 @@ or in Win32, using SecureZeroMemory ([https://msdn.microsoft.com/en-us/library/w
 
 Random note: `\u4141` used in the exploit examples is 䅁, the unified Chinese/Japanese/Korean "Ideograph to husk rice; to get the grains by oppressing the ears of the rice plant" ([https://unicode-table.com/en/4141/](https://unicode-table.com/en/4141/)). Sort of apropos.
 
-Enabling the Low Fragmentaiton Heap is important in order to ensure there is contiguous memory to exploit.
+Enabling the Low Fragmentation Heap is important in order to ensure there is contiguous memory to exploit. The heap is prdicatably organized, so you can load exploit code in high memory, replace a freed object in the LFH with a pointer to your exploit code, and then the code itself will execute the exploit naturally the next time the compromised object is called.
