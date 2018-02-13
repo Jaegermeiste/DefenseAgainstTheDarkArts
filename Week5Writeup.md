@@ -17,6 +17,16 @@ Much of the lab work this week involves simply playing with tools we have seen i
 
 Usually, there is a practical hurdle that makes executing or following along in the labs for this course more difficult online, and that is the lack of a coherent assignment sheet for the various labs. Usually the objective is clear, but you have to jump all around in the videos to find the salient information in order to accomplish the task. This week is actually a refreshing exception to that (for most of the labs, a slide exists that outlines exactly what you need to do).
 
+#### Agony
+
+Create debug break points (in debugger VM) using bp instruction on the addresses hooked by wininit for the three hooked APIs.
+
+When the debugger breaks , use f8 to step through one instruction at a time.
+Find the offset of the instruction from the beginning of the function boundary. Report the offset.
+0. NtEnumerateValueKey: Breakpoint 9b140480 hit at wininit+0x1480, and returned to nt!NtEnumerateValueKey at wininit+0x14d4. 0x14d4-0x1480 = 0x54 = 84 bytes decimal.
+1. NtQueryDirectoryFile: Breakpoint 9b140050 hit at wininit+0x1050, and returned to nt!NtQueryDirectoryFile at wininit+0x1086. 0x1086-0x1050 = 0x36 = 54 bytes decimal.
+2. NtQuerySystemInformation: Breakpoint 9b13ff00 hit at wininit+0xf00, and returned to nt!NtQuerySystemInformation at wininit+0xf1a. 0xf1a-0xf00 = 0x1a = 26 bytes decimal.
+
 ### Windows Internals (Kernel Debugging) Lesson 2 - Wk 5
 
 Day 2 covers stealth techniques other than rootkits, such as bootkits. Essentially, these modify the Master Boot Record to load the bootkit instead of the NT kernel, installing a rootkit then loading into privleged memory and then loading Windows as usual. So the bootkit hijacks the boot process, and uses the privledges gained to install the rootkit, which then actively hides both components form the operating system (and subsequently, anti virus applications).
