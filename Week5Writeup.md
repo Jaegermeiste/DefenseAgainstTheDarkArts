@@ -15,5 +15,7 @@ Certain tables make it relatively simple to redirect syscalls, including the SSD
 
 Much of the lab work this week involves simply playing with tools we have seen in prior weeks (Cuckoo, WinDbg) as well as some newer, but intuitively familiar tools such as ProcessHacker (similar to ProcessExplorer) and LiveKD (similar to WinDbg).
 
+Usually, there is a practical hurdle that makes executing or following along in the labs for this course more difficult online, and that is the lack of a coherent assignment sheet for the various labs. Usually the objective is clear, but you have to jump all around in the videos to find the salient information in order to accomplish the task. Lab 1 this week is actually an exception to that (a slide exists that outlines exactly what you need to do), but unfortunately the rest don't follow.
+
 ### Windows Internals (Kernel Debugging) Lesson 2 - Wk 5
 
