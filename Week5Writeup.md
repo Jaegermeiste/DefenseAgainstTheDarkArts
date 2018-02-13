@@ -19,7 +19,7 @@ Usually, there is a practical hurdle that makes executing or following along in 
 
 ### Windows Internals (Kernel Debugging) Lesson 2 - Wk 5
 
-Day 2 covers strealth techniques other than rootkits, such as bootkits. Essentially, these modify the Master Boot Record to load the bootkit instead of the NT kernel, installing a rootkit then loading into privleged memory and then loading Windows as usual. So the bootkit hijacks the boot process, and uses the privledges gained to install the rootkit, which then actively hides both components form the operating system (and subsequently, anti virus applications).
+Day 2 covers stealth techniques other than rootkits, such as bootkits. Essentially, these modify the Master Boot Record to load the bootkit instead of the NT kernel, installing a rootkit then loading into privleged memory and then loading Windows as usual. So the bootkit hijacks the boot process, and uses the privledges gained to install the rootkit, which then actively hides both components form the operating system (and subsequently, anti virus applications).
 
 This forging process, where malware essentially caches a copy of the unmodified MBR or system file somewhere and returns it when queried (essentially masking the interception/modification) is common to most rootkits, and can be used to mask changes to disk and memory.
 
