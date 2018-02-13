@@ -18,11 +18,14 @@ Much of the lab work this week involves simply playing with tools we have seen i
 Usually, there is a practical hurdle that makes executing or following along in the labs for this course more difficult online, and that is the lack of a coherent assignment sheet for the various labs. Usually the objective is clear, but you have to jump all around in the videos to find the salient information in order to accomplish the task. This week is actually a refreshing exception to that (for most of the labs, a slide exists that outlines exactly what you need to do).
 
 #### Agony
-
-Create debug break points (in debugger VM) using bp instruction on the addresses hooked by wininit for the three hooked APIs.
-
-When the debugger breaks , use f8 to step through one instruction at a time.
+Tuluka shows that Agony not only hides itself (suspiciously), but that there are suspicious redirections of kernel functions.
+<img src="Agony1.PNG" alt="">
+<img src="Agony2.PNG" alt="">
+Setting up the debugger/debugee went smoothly, as well as creating debug break points using the bp instruction on the addresses hooked by wininit for the three hooked APIs.
+<img src="Agony3.PNG" alt="">
+When the debugger breaks, use f8 to step through one instruction at a time.
 Find the offset of the instruction from the beginning of the function boundary. Report the offset.
+<img src="Agony4.PNG" alt="">
 0. NtEnumerateValueKey: Breakpoint 9b140480 hit at wininit+0x1480, and returned to nt!NtEnumerateValueKey at wininit+0x14d4. 0x14d4-0x1480 = 0x54 = 84 bytes decimal.
 1. NtQueryDirectoryFile: Breakpoint 9b140050 hit at wininit+0x1050, and returned to nt!NtQueryDirectoryFile at wininit+0x1086. 0x1086-0x1050 = 0x36 = 54 bytes decimal.
 2. NtQuerySystemInformation: Breakpoint 9b13ff00 hit at wininit+0xf00, and returned to nt!NtQuerySystemInformation at wininit+0xf1a. 0xf1a-0xf00 = 0x1a = 26 bytes decimal.
