@@ -19,3 +19,4 @@ Usually, there is a practical hurdle that makes executing or following along in 
 
 ### Windows Internals (Kernel Debugging) Lesson 2 - Wk 5
 
+Day 2 covers strealth techniques other than rootkits, such as bootkits. Essentially, these modify the Master Boot Table to load the bootkit instead of the NT kernel, installing a rootkit then loading into privleged memory and then loading Windows as usual. 
