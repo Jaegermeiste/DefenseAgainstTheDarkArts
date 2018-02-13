@@ -33,6 +33,7 @@ When the debugger breaks, using f8 to step through one instruction at a time was
 <img src="Agony4.PNG" alt="">
 
 The offsets for the 3 return calls are as below:
+
 0. NtEnumerateValueKey: Breakpoint 9b140480 hit at wininit+0x1480, and returned to nt!NtEnumerateValueKey at wininit+0x14d4. 0x14d4-0x1480 = 0x54 = 84 bytes decimal.
 1. NtQueryDirectoryFile: Breakpoint 9b140050 hit at wininit+0x1050, and returned to nt!NtQueryDirectoryFile at wininit+0x1086. 0x1086-0x1050 = 0x36 = 54 bytes decimal.
 2. NtQuerySystemInformation: Breakpoint 9b13ff00 hit at wininit+0xf00, and returned to nt!NtQuerySystemInformation at wininit+0xf1a. 0xf1a-0xf00 = 0x1a = 26 bytes decimal.
