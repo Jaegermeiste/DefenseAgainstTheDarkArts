@@ -8,12 +8,15 @@ Jason George
 
 Ram Venugopalan ([linkedin.com/in/kapooraditya](linkedin.com/in/kapooraditya)) is currently Director of Security Architecture at Cylance, but was a Research Architect at Intel Security at the time of the video. Cylance [https://www.cylance.com/en_us/home.html](https://www.cylance.com/en_us/home.html) is an AntiVirus vendor with an emphasis on Artifical Intelligence; however, the web site is marketing heavy and information light, so it is unclear what, exactly, the emphasis on AI actually means.
 
+#### Firewall HW
+<img src="WK6_Firewall_HW.PNG" alt="">
+
 ### Network Security Lesson 2 - Wk 6
 
-### Firewall HW
 
-### Robustness HW
-<img src="Agony3.PNG" alt="">
+
+#### Robustness HW
+<img src="WK6_Robustness_HW.PNG" alt="">
 
 1. I would suggest being conservative in what you accept, rejecting the rest, and also being conservative in what you send.
 2. It is definitely best to assume that pretty much everything is trying to break your system.
