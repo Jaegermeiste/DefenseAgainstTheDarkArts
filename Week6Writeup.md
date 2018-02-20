@@ -39,8 +39,8 @@ Nmap (actually the Windows GUI variant zenmap) is a tool I use often at work, be
 
 Many of the threats here  - spoofing, DoS/DDoS, et cetera, are not new to me. I was extremely interested in the discussion regarding NAT. I have always felt that NAT provides security though obscurity - a major disadvantage of un-NATed IPv6 is that anybody can see into your glass house and know all the names of the machines and get some sense of how they're connected. I'm I'm running a 10.x.x.x network behind a NAT at some random IP address, you don't know much about my organization other than the external IP. It was interesting to see some of the ways to elicit information about what is behind a NAT (from the outside).
 
-The idea of dpeloying IPSec universally across networks is an interesting one, and one that I think is a good idea; however, for it to be practical I think consumer network hardware will need ASICs for IPSec - relying on the CPU will be too slow on the scale of the Internet.
+The idea of deploying IPSec universally across networks is an interesting one, and one that I think is a good idea; however, for it to be practical I think consumer network hardware will need ASICs for IPSec - relying on the CPU will be too slow on the scale of the Internet.
 
-I have lawyas wanted to play with an Intrusion Proteciton System. It is out of my reach where I'm at in the Cisco world - I have an ASA 5505, but that's basically a firewall.
+I have always wanted to play with an Intrusion Proteciton System. It is out of my reach where I'm at in the Cisco world - I have an ASA 5505, but that's basically a firewall.
 
 The software definied networking information left me wanting more - I wish some more time had been spent on it and how it might be vulnerable.
