@@ -36,11 +36,16 @@ Some thoughts on attack vectors:
 2. For the Fail Open Authentication, the Tamper Data Tool does not let you delete the value, so it is (nearly) impossible to complete the lab on either Windows or Linux. The tool, on both systems, only shows the first 4 of a whole list of options:
 <img src="WebGoat_Pain_Windows.PNG" alt="">
 <img src="WebGoat_Pain_Linux.PNG" alt="">
-For whit it's worth, tt took way longer than it should have to find how to actually run the Tamper Data plugin. A few improvements to the lab (like a single line about it showing up under the Tools Menu, press ALT) would go a LONG way to making this significantly more focused on the topic. Then, after wasting a ton of time trying to figure it out, the tool doesn't even work properly.
-The trick is to hit the add element option, whihc generates an error. Then, after that, the context menu finally shows the delete option and it is possible to complete the lab.
+For whit it's worth, tt took way longer than it should have to find how to actually run the Tamper Data plugin. A few improvements to the lab (like a single line about it showing up under the Tools Menu, press ALT) would go a LONG way to making this significantly more focused on the topic. Then, after wasting a ton of time trying to figure it out, the tool doesn't even work properly (at first).
+The trick is to hit the add element option, which generates an error. Then, after that, the context menu finally shows the delete option and it is possible to complete the lab.
 <img src="WebGoat_Lab2_Linux.PNG" alt="">
 3. SQL Injection - surprisingly simple to trigger the full table dump:
 <img src="WebGoat_Lab3_Linux.PNG" alt="">
+
 ### Web Security Lesson 2 - Wk 7
 
+Much of the early part of this lecture is a common overview of web tools (WHOIS, etc) and security related websites. CheckShortURL [https://checkshorturl.com/](https://checkshorturl.com/) may well be the most useful every day.
 
+The client side tools are more interesting, especially Burp Suite and Web Scarab (referenced in the WebGoat lab). Firebug seems like it replicates functionality that already exists in the Developer tools in Firefox, Chrome, and Edge.
+
+The remainder of this lecture is covered by Lab 2, submitted seperately on Canvas.
