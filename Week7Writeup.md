@@ -30,11 +30,15 @@ Some thoughts on attack vectors:
 -The attack surface becvause of the large feature set of HTML5 makes sense, but at the same time those features are largely needed - I imagine HTML6 (someday) will mostly focus on plugging the security holes found in v5.
 
 #### WebGoat - Lab 1
-1. Cross Site Scripting - this one was easy. Dump ```<script>Do Malicious Thing</script>``` into the Street field (which incidentally pwns both Tom and Jerry, not just Jerry).
-2. For the Fail Open Authentication, the Tamper Data Tool does not let you delete the value, so it is impossible to complete the lab on either Windows or Linux. The tool, on both systems, only shows the first 4 of a whole list of options:
+1. Cross Site Scripting - this one was easy. Dump ```<script>prompt("All Your Base Are Belong To","Us");document.write("You have been Pwnd!!!1!";</script>``` into the Street field (which incidentally pwns both Tom and Jerry, not just Jerry).
+<img src="WebGoat_Lab1A_Linux.PNG" alt="">
+<img src="WebGoat_Lab1B_Linux.PNG" alt="">
+2. For the Fail Open Authentication, the Tamper Data Tool does not let you delete the value, so it is (nearly) impossible to complete the lab on either Windows or Linux. The tool, on both systems, only shows the first 4 of a whole list of options:
 <img src="WebGoat_Pain_Windows.PNG" alt="">
 <img src="WebGoat_Pain_Linux.PNG" alt="">
-For whit it's worth, tt took way longer than it should have to find how to actually run the Tamper Data plugin. A few improvements to the lab (like a single line about it showing up under the Tools Menu, press ALT) would go a LONG way to making this significantly more focused on the topic. Then, after wasting a ton of time trying to figure it out, the tool doesn't even work properly. 
+For whit it's worth, tt took way longer than it should have to find how to actually run the Tamper Data plugin. A few improvements to the lab (like a single line about it showing up under the Tools Menu, press ALT) would go a LONG way to making this significantly more focused on the topic. Then, after wasting a ton of time trying to figure it out, the tool doesn't even work properly.
+The trick is to hit the add element option, whihc generates an error. Then, after that, the context menu finally shows the delete option and it is possible to complete the lab.
+<img src="WebGoat_Lab2_Linux.PNG" alt="">
 3. SQL Injection - surprisingly simple to trigger the full table dump:
 <img src="WebGoat_Lab3_Linux.PNG" alt="">
 ### Web Security Lesson 2 - Wk 7
