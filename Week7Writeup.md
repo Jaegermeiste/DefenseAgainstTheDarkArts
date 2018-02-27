@@ -29,6 +29,11 @@ Some thoughts on attack vectors:
 -I never realized how simplistic Cross Site Scripting (XSS) really was.
 -The attack surface becvause of the large feature set of HTML5 makes sense, but at the same time those features are largely needed - I imagine HTML6 (someday) will mostly focus on plugging the security holes found in v5.
 
+#### WebGoat - Lab 1
+1. Cross Site Scripting - this one was easy. Dump ```<script>Do Malicious Thing</script>``` into the Street field (which incidentally pwns both Tom and Jerry, not just Jerry).
+It took way longer than it should have to find how to actually run the Tamper Data plugin. A few improvements to the lab (like a single line about it showing up under the Tools Menu, press ALT) would go a LONG way to making this significantly more focused on the topic.
+2. For the Fail Open Authentication, the Tamper Data Tool does not let you delete the value, so it is impossible to complete the lab on either Windows or Linux.
+3. SQL Injection - surprisingly simple to trigger the full table dump:
 ### Web Security Lesson 2 - Wk 7
 
 
