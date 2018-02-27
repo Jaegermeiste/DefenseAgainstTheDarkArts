@@ -33,7 +33,10 @@ Some thoughts on attack vectors:
 1. Cross Site Scripting - this one was easy. Dump ```<script>Do Malicious Thing</script>``` into the Street field (which incidentally pwns both Tom and Jerry, not just Jerry).
 It took way longer than it should have to find how to actually run the Tamper Data plugin. A few improvements to the lab (like a single line about it showing up under the Tools Menu, press ALT) would go a LONG way to making this significantly more focused on the topic.
 2. For the Fail Open Authentication, the Tamper Data Tool does not let you delete the value, so it is impossible to complete the lab on either Windows or Linux.
+<img src="WebGoat_Pain_Windows.PNG" alt="">
+<img src="WebGoat_Pain_Linux.PNG" alt="">
 3. SQL Injection - surprisingly simple to trigger the full table dump:
+<img src="WebGoat_Lab3_Linux.PNG" alt="">
 ### Web Security Lesson 2 - Wk 7
 
 
