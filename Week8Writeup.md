@@ -55,15 +55,23 @@ What is the average:
 -Subject length: ```SELECT avg(length(msubject)) FROM message_data;```: 27.70129
 
 How many:
+
 -.zip:
+
 -.rar:
+
 -.xlsx:
+
 -.docx:
+
 -.pdf:
+
 -.exe:
 
 What is the most common:
--File extension in urls?:" 
+
+-File extension in urls?:
+
 
 
 ### Messaging Security Lesson 2 - Wk 8
