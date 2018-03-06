@@ -8,6 +8,8 @@ Jason George
 
 Eric Peterson ([https://www.linkedin.com/in/eric-peterson-b3500256/](https://www.linkedin.com/in/eric-peterson-b3500256/)) is currently Director of Threat Research at McAfee, but at the time of the lectures was simply the Research Manager for Email Security.
 
+Bayesian statistical anylysis of data is something I have done extensively - my undergraduate thesis was a Bayesian analysis of terrorist sentiment differentiating Al-Qaeda affiliates from one another (a major win in that analysis was that Al Qaeda in Iraq stood out significantly, about 6 months prior to them formally fragmenting off into ISIL). The unique feature of that analysis is that the strings were rated among various psycholinguisitc dimensions by human raters - that is, the corpus analysis was done by people, not machine (which (at the time) couldn't identify sentiment or sarcasm, etc) - but it is cool to find common ground between two wildly different academic domains.
+
 Regex Coach [http://weitz.de/regex-coach/](http://weitz.de/regex-coach/) is a cool tool, and I wish I had known about it years ago. Like most people, Iam not a regex ninja, and this tool makes it very clear what the regex catches. The only feature that seems to be missing is treating CRLF as a new string (so you can see which strings you are hitting simultantouesly / multiple strings in the box). It doesn't appear to be open source, and apparently hasn't had an update since 2008, so eventually the program will likely end up dying, sadly.
 
 <img src="RegexCoachViagra.PNG" alt="">
@@ -22,4 +24,6 @@ but clearly this expression was written specifically for the dataset and would p
 
 ### Messaging Security Lesson 2 - Wk 8
 
+As of this writing, the Kindle Edition of O'Reilly's *Data Driven* ([https://www.amazon.com/Data-Driven-DJ-Patil-ebook/dp/B00SXHFTAS](https://www.amazon.com/Data-Driven-DJ-Patil-ebook/dp/B00SXHFTAS), *_NOT_* an affiliate link) by DJ Patil and Hilary Mason is FREE on Amazon.
 
+My Master's degree is in Forensic Psychology, and despite what Television says, Criminal Profiling is fundamentally Data Science. The big hurdle in that domain is qunatifying data (e.g. "How do you quantify an aggressive stab wound as opposed to a hesitant stab wound?"), but once you have a messy crime scene represented as a dataset, you are effectively seeking patterns and extrapolating and qualifying data - only instead of detecting spam, you are detecting whether or not a scene matches a serial killer's signature (signature in this sense being the same as for spam or viruses, not the criminological definition). Another cool convergence of skills I learned in a completely different academic domain.
