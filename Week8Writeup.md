@@ -23,20 +23,35 @@ v|4gra
 but clearly this expression was written specifically for the dataset and would probably miss most other variant "spellings" of the word. 
 
 Lab 1:
+
 How many total:
+
 -Records: ```SELECT count(*) AS record_count FROM message_data;``` : 100000
+
 -Source_Ips: ```SELECT count(*) AS ip_count FROM message_data WHERE source_ip IS NOT NULL;``` : 99986
+
 -Subjects: ```SELECT count(*) AS subj_count FROM message_data WHERE msubject IS NOT NULL;``` : 100000
+
 -Attachments: ```SELECT count(*) AS atch_count FROM message_data WHERE attachment_name IS NOT NULL;``` : 99244
+
 -Urls: ```SELECT count(*) AS url_count FROM message_data WHERE url IS NOT NULL;``` : 96877
+
 How many distinct:
+
 -Source_Ips: ```SELECT count(distinct(source_ip)) FROM message_data;```: 25745
+
 -From Domains: ```SELECT count(distinct(helo_domain)) FROM message_data;```: 22994
+
 -Subjects: ```SELECT count(distinct(msubject)) FROM message_data;```: 16636
+
 -Attachments: ```SELECT count(distinct(attachment_name)) FROM message_data;```: 76745
+
 -URLs: ```SELECT count(distinct(url)) FROM message_data;```: 88146
+
 What is the average:
+
 -Message size: ```SELECT avg(message_size) FROM message_data;```: 187560.16272
+
 -Subject length: ```SELECT avg(length(msubject)) FROM message_data;```: 27.70129
 
 How many:
