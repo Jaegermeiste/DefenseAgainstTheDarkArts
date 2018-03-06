@@ -10,6 +10,16 @@ Eric Peterson ([https://www.linkedin.com/in/eric-peterson-b3500256/](https://www
 
 Regex Coach [http://weitz.de/regex-coach/](http://weitz.de/regex-coach/) is a cool tool, and I wish I had known about it years ago. Like most people, Iam not a regex ninja, and this tool makes it very clear what the regex catches. The only feature that seems to be missing is treating CRLF as a new string (so you can see which strings you are hitting simultantouesly / multiple strings in the box). It doesn't appear to be open source, and apparently hasn't had an update since 2008, so eventually the program will likely end up dying, sadly.
 
+<img src="RegexCoachViagra.PNG" alt="">
+The Regex itself (as above) wasn't too complicated for the limited case of
+```
+v | a g r a
+\/iaGrA
+v|4gra
+!Viagra
+```
+but clearly this expression was written specifically for the dataset and would probably miss most other variant "spellings" of the word. 
+
 ### Messaging Security Lesson 2 - Wk 8
 
 
