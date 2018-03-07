@@ -56,22 +56,21 @@ What is the average:
 
 How many:
 
--.zip:
+-.zip: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.zip';```: 150
 
--.rar:
+-.rar: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.rar';```: 6
 
--.xlsx:
+-.xlsx: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 5)) = '.xlsx';```: 530
 
--.docx:
+-.docx: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 5)) = '.docx';```: 653
 
--.pdf:
+-.pdf: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.pdf';```: 5410
 
--.exe:
+-.exe: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.zip';```: 1
 
 What is the most common:
 
--File extension in urls?:
-
+-File extension in urls?: ```SELECT lower(right(url, position('.' in reverse(url))-1)) as extension, count(*) as count FROM message_data GROUP BY extension ORDER BY count DESC;```: .com is the most common extension.
 
 
 ### Messaging Security Lesson 2 - Wk 8
