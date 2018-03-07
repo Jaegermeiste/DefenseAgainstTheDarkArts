@@ -69,10 +69,13 @@ SELECT avg(length(msubject)) FROM message_data;```: 27.70129
 How many:
 
 -.zip: ```sql
-SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.zip';```: 150
+SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.zip';
+```
+150
 
 -.rar: ```sql
-SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.rar';```: 6
+SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.rar';
+```: 6
 
 -.xlsx: ```sql
 SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 5)) = '.xlsx';```: 530
