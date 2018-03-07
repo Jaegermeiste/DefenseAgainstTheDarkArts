@@ -38,7 +38,7 @@ How many total:
 
 How many distinct:
 
--Source_Ips: ```SELECT count(distinct(source_ip)) FROM message_data;```: 25745
+-Source_Ips: ```sql SELECT count(distinct(source_ip)) FROM message_data;```: 25745
 
 -From Domains: ```SELECT count(distinct(helo_domain)) FROM message_data;```: 22994
 
