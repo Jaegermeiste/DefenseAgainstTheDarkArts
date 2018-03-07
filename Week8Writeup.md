@@ -146,11 +146,11 @@ What is the most common:
 ```sql
 SELECT lower(right(url, position('.' in reverse(url))-1)) as extension, count(*) as count FROM message_data GROUP BY extension ORDER BY count DESC;
 ```
-.com is the most common extension.
+.com is the most common TLD, followed by .pe, .org, net, .edu, and .us; .jpg is the most common file extension, followed by .gif, .html, .png, .aspx, .php, .htm, and .pdf.
 
 
 ### Messaging Security Lesson 2 - Wk 8
 
-As of this writing, the Kindle Edition of O'Reilly's *Data Driven* ([https://www.amazon.com/Data-Driven-DJ-Patil-ebook/dp/B00SXHFTAS](https://www.amazon.com/Data-Driven-DJ-Patil-ebook/dp/B00SXHFTAS), *_NOT_* an affiliate link) by DJ Patil and Hilary Mason is FREE on Amazon.
+As of this writing, the Kindle Edition of O'Reilly's *Data Driven* ([https://www.amazon.com/Data-Driven-DJ-Patil-ebook/dp/B00SXHFTAS](https://www.amazon.com/Data-Driven-DJ-Patil-ebook/dp/B00SXHFTAS), **_NOT_** an affiliate link) by DJ Patil and Hilary Mason is FREE on Amazon.
 
 My Master's degree is in Forensic Psychology, and despite what Television says, Criminal Profiling is fundamentally Data Science. The big hurdle in that domain is qunatifying data (e.g. "How do you quantify an aggressive stab wound as opposed to a hesitant stab wound?"), but once you have a messy crime scene represented as a dataset, you are effectively seeking patterns and extrapolating and qualifying data - only instead of detecting spam, you are detecting whether or not a scene matches a serial killer's signature (signature in this sense being the same as for spam or viruses, not the criminological definition). Another cool convergence of skills I learned in a completely different academic domain.
