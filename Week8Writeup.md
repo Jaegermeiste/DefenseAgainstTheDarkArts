@@ -46,7 +46,7 @@ SELECT count(*) AS subj_count FROM message_data WHERE msubject IS NOT NULL;
 
 -Attachments: 
 ```sql
-SELECT count(*) AS atch_count FROM message_data WHERE attachment_name IS NOT NULL;
+SELECT count(*) AS atch_count FROM message_data WHERE attachment_name IS NOT NULL AND length(attachment_name) > 0;
 ```
 99244
 
@@ -90,12 +90,14 @@ SELECT count(distinct(url)) FROM message_data;
 
 What is the average:
 
--Message size: ```sql
+-Message size: 
+```sql
 SELECT avg(message_size) FROM message_data;
 ```
 187560.16272
 
--Subject length: ```sql
+-Subject length: 
+```sql
 SELECT avg(length(msubject)) FROM message_data;
 ```
 27.70129
