@@ -26,51 +26,70 @@ Lab 1:
 
 How many total:
 
--Records: ```SELECT count(*) AS record_count FROM message_data;``` : 100000
+-Records: ```sql
+SELECT count(*) AS record_count FROM message_data;``` : 100000
 
--Source_Ips: ```SELECT count(*) AS ip_count FROM message_data WHERE source_ip IS NOT NULL;``` : 99986
+-Source_Ips: ```sql
+SELECT count(*) AS ip_count FROM message_data WHERE source_ip IS NOT NULL;``` : 99986
 
--Subjects: ```SELECT count(*) AS subj_count FROM message_data WHERE msubject IS NOT NULL;``` : 100000
+-Subjects: ```sql
+SELECT count(*) AS subj_count FROM message_data WHERE msubject IS NOT NULL;``` : 100000
 
--Attachments: ```SELECT count(*) AS atch_count FROM message_data WHERE attachment_name IS NOT NULL;``` : 99244
+-Attachments: ```sql
+SELECT count(*) AS atch_count FROM message_data WHERE attachment_name IS NOT NULL;``` : 99244
 
--Urls: ```SELECT count(*) AS url_count FROM message_data WHERE url IS NOT NULL;``` : 96877
+-Urls: ```sql
+SELECT count(*) AS url_count FROM message_data WHERE url IS NOT NULL;``` : 96877
 
 How many distinct:
 
--Source_Ips: ```sql SELECT count(distinct(source_ip)) FROM message_data;```: 25745
+-Source_Ips: ```sql
+SELECT count(distinct(source_ip)) FROM message_data;```: 25745
 
--From Domains: ```SELECT count(distinct(helo_domain)) FROM message_data;```: 22994
+-From Domains: ```sql
+SELECT count(distinct(helo_domain)) FROM message_data;```: 22994
 
--Subjects: ```SELECT count(distinct(msubject)) FROM message_data;```: 16636
+-Subjects: ```sql
+SELECT count(distinct(msubject)) FROM message_data;```: 16636
 
--Attachments: ```SELECT count(distinct(attachment_name)) FROM message_data;```: 76745
+-Attachments: ```sql
+SELECT count(distinct(attachment_name)) FROM message_data;```: 76745
 
--URLs: ```SELECT count(distinct(url)) FROM message_data;```: 88146
+-URLs: ```sql
+SELECT count(distinct(url)) FROM message_data;```: 88146
 
 What is the average:
 
--Message size: ```SELECT avg(message_size) FROM message_data;```: 187560.16272
+-Message size: ```sql
+SELECT avg(message_size) FROM message_data;```: 187560.16272
 
--Subject length: ```SELECT avg(length(msubject)) FROM message_data;```: 27.70129
+-Subject length: ```sql
+SELECT avg(length(msubject)) FROM message_data;```: 27.70129
 
 How many:
 
--.zip: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.zip';```: 150
+-.zip: ```sql
+SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.zip';```: 150
 
--.rar: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.rar';```: 6
+-.rar: ```sql
+SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.rar';```: 6
 
--.xlsx: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 5)) = '.xlsx';```: 530
+-.xlsx: ```sql
+SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 5)) = '.xlsx';```: 530
 
--.docx: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 5)) = '.docx';```: 653
+-.docx: ```sql
+SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 5)) = '.docx';```: 653
 
--.pdf: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.pdf';```: 5410
+-.pdf: ```sql
+SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.pdf';```: 5410
 
--.exe: ```SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.zip';```: 1
+-.exe: ```sql
+SELECT count(*) FROM message_data WHERE lower(right(attachment_name, 4)) = '.zip';```: 1
 
 What is the most common:
 
--File extension in urls?: ```SELECT lower(right(url, position('.' in reverse(url))-1)) as extension, count(*) as count FROM message_data GROUP BY extension ORDER BY count DESC;```: .com is the most common extension.
+-File extension in urls?: ```sql
+SELECT lower(right(url, position('.' in reverse(url))-1)) as extension, count(*) as count FROM message_data GROUP BY extension ORDER BY count DESC;```: .com is the most common extension.
 
 
 ### Messaging Security Lesson 2 - Wk 8
