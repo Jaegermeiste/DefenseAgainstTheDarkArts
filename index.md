@@ -11,3 +11,4 @@ Weekly write-up of thoughts, impressions, and conclusions.
 6. [Week 6 Writeup](https://jaegermeiste.github.io/DefenseAgainstTheDarkArts/Week6Writeup)
 7. [Week 7 Writeup](https://jaegermeiste.github.io/DefenseAgainstTheDarkArts/Week7Writeup)
 8. [Week 8 Writeup](https://jaegermeiste.github.io/DefenseAgainstTheDarkArts/Week8Writeup)
+9. [Week 9/10 Writeup](https://jaegermeiste.github.io/DefenseAgainstTheDarkArts/Week9_10Writeup)
