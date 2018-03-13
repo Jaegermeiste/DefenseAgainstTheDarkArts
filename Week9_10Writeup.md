@@ -83,8 +83,32 @@ As such we need to decompile it first, but because the source was (usually) Java
 
 The lesson takes a detour into two-factor authentication, but this is to clarify a trojan attack that depends on gullible users installing shady security applications (FakeToken variants, etc).
 
-#### Lab 1:
-DroidDream
+#### Lab 1: DroidDream
+
+##### View File Types:
+
+<img src="WK9_Lesson2_Lab1_File.PNG" alt="">
+
+##### View Files in GHex:
+
+<img src="WK9_Lesson2_Lab1_GHexSQLiteDB.PNG" alt="">
+<img src="WK9_Lesson2_Lab1_GHexRageAgainstTheCage.PNG" alt="">
+<img src="WK9_Lesson2_Lab1_GHexProfile.PNG" alt="">
+<img src="WK9_Lesson2_Lab1_GHexExploid.PNG" alt="">
+
+##### View Strings:
+
+<img src="WK9_Lesson2_Lab1_StringsRageAgainstTheCage.PNG" alt="">
+
+##### Decompile and View:
+
+<img src="WK9_Lesson2_Lab1_Manifest.PNG" alt="">
+
+The application sues an alarm to trigger the Root script:
+<img src="WK9_Lesson2_Lab1_Root.PNG" alt="">
+
+Once rooted, the application copies the sqlite.db file to a system APK:
+<img src="WK9_Lesson2_Lab1_CopySQLiteDB.PNG" alt="">
 
 #### Lab 2:
 Banking Trojan
