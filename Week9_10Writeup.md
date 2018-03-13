@@ -35,7 +35,39 @@ It is particularly interesting how malicious actors exploited Google's attempts 
 - FakePlayer uses the onCreate callback of the Activity to execute the payload.
 
 
-#### Lab 2:
+#### Lab 2: Walk&Text
+
+##### Create Android Virtual Device:
+
+<img src="WK9_Lesson1_Lab2_CreateAVD.PNG" alt="">
+
+##### Set Path:
+
+<img src="WK9_Lesson1_Lab2_SetPaths.PNG" alt="">
+
+##### Run Emulator 1:
+
+<img src="WK9_Lesson1_Lab2_RunEmulator.PNG" alt="">
+
+##### Create Contact:
+
+<img src="WK9_Lesson1_Lab2_CreateContact.PNG" alt="">
+
+##### Install Malware:
+
+<img src="WK9_Lesson1_Lab2_InstallMalware.PNG" alt="">
+
+##### Run Android Virtual Device #2:
+
+<img src="WK9_Lesson1_Lab2_RunEmulator2.PNG" alt="">
+
+##### Run Malware:
+
+<img src="WK9_Lesson1_Lab2_Pwnd.PNG" alt="">
+
+##### Wireshark:
+
+<img src="WK9_Lesson1_Lab2_Wireshark.PNG" alt="">
 
 ### Mobile Security Lesson 2 - Wk 9
 
