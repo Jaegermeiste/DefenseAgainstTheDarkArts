@@ -67,7 +67,7 @@ It is particularly interesting how malicious actors exploited Google's attempts 
 
 ##### Wireshark:
 
-<img src="WK9_Lesson1_Lab2_Wireshark.PNG" alt="">
+<img src="WK9_Lesson1_Lab2_WireShark.PNG" alt="">
 
 ### Mobile Security Lesson 2 - Wk 9
 
