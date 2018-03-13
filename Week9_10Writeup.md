@@ -18,11 +18,11 @@ It is particularly interesting how malicious actors exploited Google's attempts 
 
 #### Lab 1: FakePlayer
 APK File is a zip file:
-
+<img src="WK9_Lesson1_Lab1_ReviewAPK.PNG" alt="">
 Decompile:
-
+<img src="WK9_Lesson1_Lab1_DecompileAPK.PNG" alt="">
 Reverse:
-
+<img src="WK9_Lesson1_Lab1_Reversing.PNG" alt="">
 -FakePlayer sends 3 SMS messages.
 -FakePlayer sends the message "798657" to shortcodes 3353 and 3354.
 -FakePlayer uses the onCreate callback of the Activity to execute the payload.
