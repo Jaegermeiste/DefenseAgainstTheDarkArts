@@ -17,15 +17,23 @@ Having owned an Android phone since the Droid era, I am very familiar with rooti
 It is particularly interesting how malicious actors exploited Google's attempts to combat them, turning the Market Security app against Google.
 
 #### Lab 1: FakePlayer
-APK File is a zip file:
+##### APK File is a zip file:
+
 <img src="WK9_Lesson1_Lab1_ReviewAPK.PNG" alt="">
-Decompile:
+
+##### Decompile:
+
 <img src="WK9_Lesson1_Lab1_DecompileAPK.PNG" alt="">
-Reverse:
+
+##### Reverse:
+
 <img src="WK9_Lesson1_Lab1_Reversing.PNG" alt="">
+
+##### Results:
 -FakePlayer sends 3 SMS messages.
 -FakePlayer sends the message "798657" to shortcodes 3353 and 3354.
 -FakePlayer uses the onCreate callback of the Activity to execute the payload.
+
 
 #### Lab 2:
 
