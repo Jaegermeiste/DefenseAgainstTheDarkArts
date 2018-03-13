@@ -134,7 +134,7 @@ Once rooted, the application copies the sqlite.db file to a system APK:
 
 ##### Send message via DDNS:
 
-<img src="WK9_Lesson2_Lab2_DDNS.PNG" alt="">
+<img src="WK9_Lesson2_Lab2_DDMS.PNG" alt="">
 <img src="WK9_Lesson2_Lab2_mTAN.PNG" alt="">
 
 ##### Send mTAN via Telnet SMS:
@@ -153,6 +153,6 @@ Obfuscation is covered - legitimate uses are touched on, but the discussion is m
 
 There is a lab walkthough of the analysis of OBAD. This is interesting to watch as there are multiple steps to properly "break into" the malware just to begin to analyse it. This requires decompiling, de-obfuscation, and literally editing the Andrid emulator with a hex editor to defeat IMEI based emulator detection.
 
-This is follwed by a lab walkthrough of SMS Torjans. This requires decompiling, editing, recompiling, an multiple emulators, but it is also interesting to see the interaction between the systems.
+This is follwed by a lab walkthrough of SMS Trojans. This requires decompiling, editing, recompiling, an multiple emulators, but it is also interesting to see the interaction between the systems.
 
 There is quite a bit this week, a lot of history, a lot of theory, and a lot of practice. It is a lot in a very short timeframe, but informative and it is very interesting to see the other side of rooting. For me (and most advaced Android users), rooting is a way to take control of the system, to get rid of stupid carrier restrictions and bloatware, etc. It never really occurred to me that the same exploits used to gain root were being used for malicious purposes. While most ROM builders are Grey-White hats, there are plenty of Black Hats out there doing shady things. It would probably be worthwhile for Google to allow a properly authenticated way to root the device to install ROMs, etc, that didn't depend on exploits - perhaps that would slow doen the exploit economy a bit (and make user lives easier).
