@@ -30,9 +30,9 @@ It is particularly interesting how malicious actors exploited Google's attempts 
 <img src="WK9_Lesson1_Lab1_Reversing.PNG" alt="">
 
 ##### Results:
--FakePlayer sends 3 SMS messages.
--FakePlayer sends the message "798657" to shortcodes 3353 and 3354.
--FakePlayer uses the onCreate callback of the Activity to execute the payload.
+- FakePlayer sends 3 SMS messages.
+- FakePlayer sends the message "798657" to shortcodes 3353 and 3354.
+- FakePlayer uses the onCreate callback of the Activity to execute the payload.
 
 
 #### Lab 2:
