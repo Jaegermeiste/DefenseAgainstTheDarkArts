@@ -104,14 +104,44 @@ The lesson takes a detour into two-factor authentication, but this is to clarify
 
 <img src="WK9_Lesson2_Lab1_Manifest.PNG" alt="">
 
-The application sues an alarm to trigger the Root script:
+The application uses an alarm to trigger the Root script:
 <img src="WK9_Lesson2_Lab1_Root.PNG" alt="">
 
 Once rooted, the application copies the sqlite.db file to a system APK:
 <img src="WK9_Lesson2_Lab1_CopySQLiteDB.PNG" alt="">
 
-#### Lab 2:
-Banking Trojan
+#### Lab 2: Banking Trojan
+
+##### Run Emulator and verify device:
+
+<img src="WK9_Lesson2_Lab2_ADBDevices.PNG" alt="">
+
+##### Install Malware:
+
+<img src="WK9_Lesson2_Lab2_ADBInstall.PNG" alt="">
+
+##### Run Second Emulator:
+
+<img src="WK9_Lesson2_Lab2_RunEmulator.PNG" alt="">
+
+##### Run Malware and Send Control Messages:
+
+<img src="WK9_Lesson2_Lab2_RunMalware.PNG" alt="">
+
+##### Send mTAN via DDMS:
+
+<img src="WK9_Lesson2_Lab2_DDMS.PNG" alt="">
+
+##### Send message via DDNS:
+
+<img src="WK9_Lesson2_Lab2_DDNS.PNG" alt="">
+<img src="WK9_Lesson2_Lab2_mTAN.PNG" alt="">
+
+##### Send mTAN via Telnet SMS:
+
+<img src="WK9_Lesson2_Lab2_Telnet.PNG" alt="">
+
+Attacker can intercept all text messages from victim device, including bank pins/2FA.
 
 ### Mobile Security Lesson 3 - Wk 10
 
